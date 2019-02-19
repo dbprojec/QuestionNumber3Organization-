@@ -8,29 +8,88 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/ceoTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CEO"
-        android:gravity="center"
-        android:textSize="21dp"
-        android:textColor="@color/colorAccent"/>
+        android:text="This is your company"
+        android:textSize="21sp"
+        android:gravity="center_horizontal"
+        android:textColor="#000"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="16dp"/>
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp" />
+
     <TextView
-        android:id="@+id/marketingVPTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Marketing VP"
-        android:gravity="center"
-        android:textSize="21dp"
-        android:textColor="@color/colorAccent"/>
+        android:id="@+id/employeeSalary"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Salary"/>
+
     <TextView
-        android:id="@+id/productionVPTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Procution VP"
-        android:gravity="center"
-        android:textSize="21dp"
-        android:textColor="@color/colorAccent"/>
+        android:id="@+id/contorl_span"
+        android:textSize="18sp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#000"
+        android:text="Control Span Salaries"/>
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+           <!---->
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
 
 
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/ceoTextView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="CEO"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="21dp"-->
+        <!--android:textColor="@color/colorAccent"/>-->
+    <!--<TextView-->
+        <!--android:id="@+id/marketingVPTextView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Marketing VP"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="21dp"-->
+        <!--android:textColor="@color/colorAccent"/>-->
+    <!--<TextView-->
+        <!--android:id="@+id/productionVPTextView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Procution VP"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="21dp"-->
+        <!--android:textColor="@color/colorAccent"/>-->
+
+
+    <TextView
+        android:id="@+id/logout_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Log out"
+        android:gravity="center_horizontal"
+        android:textColor="#000"
+        android:textSize="15sp"/>
 </LinearLayout>

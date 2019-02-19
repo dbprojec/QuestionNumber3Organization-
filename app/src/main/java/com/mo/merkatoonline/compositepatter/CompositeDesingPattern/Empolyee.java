@@ -1,5 +1,6 @@
 package com.mo.merkatoonline.compositepatter.CompositeDesingPattern;
 
+import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Vector;
 
@@ -61,11 +62,39 @@ public class Empolyee implements AbstarctEmployee {
         return sum;
     }
 
+//    @Override
+//    public ArrayList print() {
+//        String sum = empName;
+//        for(int i = 0; i<suboridinates.size(); i++){
+//            sum += "\n"+((Empolyee)suboridinates.elementAt(i)).getEmpName() + "\n";
+//        }
+//        return sum;
+//    }
+
     @Override
-    public String print() {
-        String sum = empName;
+    public ArrayList<String> print() {
+        ArrayList<String> sum = new ArrayList<>();
         for(int i = 0; i<suboridinates.size(); i++){
-            sum += "\n"+((Empolyee)suboridinates.elementAt(i)).getEmpName() + "\n";
+            sum.add(((Empolyee)suboridinates.elementAt(i)).getEmpName() + " Salary : - " + ((Empolyee) suboridinates.elementAt(i)).getEmpSalary());
+        }
+        return sum;
+    }
+
+
+    @Override
+    public ArrayList<String> printWithNewLine() {
+        ArrayList<String> sum = new ArrayList<>();
+        for(int i = 0; i<suboridinates.size(); i++){
+            sum.add(((Empolyee)suboridinates.elementAt(i)).getEmpName() + " Salary : - " + ((Empolyee) suboridinates.elementAt(i)).getEmpSalary() +"\n");
+        }
+        return sum;
+    }
+
+    @Override
+    public ArrayList<String> printNameOnly() {
+        ArrayList<String> sum = new ArrayList<>();
+        for(int i = 0; i<suboridinates.size(); i++){
+            sum.add(((Empolyee)suboridinates.elementAt(i)).getEmpName() + " Salary : - " + ((Empolyee) suboridinates.elementAt(i)).getEmpSalary() +"\n");
         }
         return sum;
     }

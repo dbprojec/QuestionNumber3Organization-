@@ -1,5 +1,7 @@
 package com.mo.merkatoonline.compositepatter.CompositeDesingPattern;
 
+import java.util.ArrayList;
+
 public interface AbstarctEmployee {
     float getEmpSalary();
     String getEmpName();
@@ -8,8 +10,9 @@ public interface AbstarctEmployee {
     void removeEmployee(Empolyee empolyee);
     float getSalaries();
 
-    String print();
-
+    ArrayList print();
+    ArrayList printWithNewLine();
+    ArrayList printNameOnly();
 }
 
 
